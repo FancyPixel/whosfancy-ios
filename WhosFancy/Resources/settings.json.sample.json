@@ -1,0 +1,8 @@
+{
+    "uudid" : "63629ABC-D055-421E-B595-E6D0D89E021A",
+    "major" : 1,
+    "minor" : 1,
+    "identifier" : "Kevin Beacon",
+    "checkin" : "http://your.host/api/v1/checkin",
+    "checkout" : "http://your.host/api/v1/checkout"
+}

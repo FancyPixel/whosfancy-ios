@@ -1,0 +1,8 @@
+{
+    "uudid" : "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+    "major" : 65506,
+    "minor" : 40308,
+    "identifier" : "Fancy Beacon",
+    "checkin" : "http://whosfancy.herokuapp.com/api/v1/checkin",
+    "checkout" : "http://whosfancy.herokuapp.com/api/v1/checkout"
+}

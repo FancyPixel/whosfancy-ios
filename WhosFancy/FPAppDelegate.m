@@ -7,12 +7,24 @@
 //
 
 #import "FPAppDelegate.h"
+#import "FPBeaconHelper.h"
 
 @implementation FPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSDictionary *attributes = @{ NSFontAttributeName: [UIFont fontWithName:@"Avenir-Light" size:24],
+								  NSForegroundColorAttributeName: [UIColor whiteColor]};
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:192.0/255.0 green:57.0/255.0 blue:43.0/255.0 alpha:1]];
+	[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+     
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+    
+    [[FPBeaconHelper sharedHelper] loadUser];
+    [[FPBeaconHelper sharedHelper] startMonitoring];
+    
     return YES;
 }
 							
