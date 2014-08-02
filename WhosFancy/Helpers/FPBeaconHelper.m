@@ -72,7 +72,7 @@ typedef NS_ENUM(NSInteger, FPCheckDirection) {
 - (CLBeaconRegion *)region
 {
     if (_region == nil) {
-        NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:self.settings[@"udid"]];
+        NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:self.settings[@"uudid"]];
         _region = [[CLBeaconRegion alloc] initWithProximityUUID:proximityUUID
                                                           major:[self.settings[@"major"] intValue]
                                                           minor:[self.settings[@"minor"] intValue]
