@@ -1,19 +1,18 @@
-whosfancy-ios
-=============
+# whosfancy-ios
 
 An automatic checkin application using iBeacons. 
 
 It's a simple App that sends a POST request to a rails backend when a user enters or exits a given iBeacon region. It was made while playing around with iBeacons.
 
-##Installation
+## Installation
 Before running the sample, make a copy of `settings.json.sample` in the Resources folder as `settings.json`, replacing the sample data with your settings.
 Check out our [Rails backend](https://github.com/FancyPixel/whosfancy-rails) to have the full sample working in no time.
 
-###MIT License
+### MIT License
 
     The MIT License (MIT)
 
-    Copyright (c) 2014 Fancy Pixel S.r.l.
+    Copyright (c) 2014-2017 Fancy Pixel S.r.l.
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
